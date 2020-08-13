@@ -1,0 +1,15 @@
+.image__upload{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    position: fixed;
+    background-color: #fff;
+    border-top: 1px solid lightgray;
+    bottom: 0;
+}
+
+.progress{
+    width: 100%;
+}
