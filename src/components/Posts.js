@@ -36,7 +36,8 @@ function Posts({postId,username,user,caption,imageUrl}) {
             username:user.displayName,
             timestamp:firebase.firestore.FieldValue.serverTimestamp()
         })
-        setComment('')
+        setComment('');
+        
 
     }
    
@@ -78,28 +79,28 @@ function Posts({postId,username,user,caption,imageUrl}) {
 
         )}
         {
-          console.log(setIcon)
-            // setIcon ?
+        
+          icon ?
           
-        //   <form className="post__commentBox">
-        //   <input
-        //     className="post__input"
-        //     value={comment}
-        //     placeholde="Add a new comment ..."
-        //     type="text"
-        //     onChange={(e) => setComment(e.target.value)}
-        //   />
-        //   <button
+          <form className="post__commentBox">
+          <input
+            className="post__input"
+            value={comment}
+            placeholde="Add a new comment ..."
+            type="text"
+            onChange={(e) => setComment(e.target.value)}
+          />
+          <button
           
-        //     className="post__button"
-        //     disabled={!comment}
-        //     type="submit"
-        //     onClick={postComment}
-        //   >
-        //     Post
-        //   </button>
-        // </form>:
-        // null
+            className="post__button"
+            disabled={!comment}
+            type="submit"
+            onClick={postComment}
+          >
+            Post
+          </button>
+        </form>:
+        null
         }
        
       </div>
